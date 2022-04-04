@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="48dp"
+        android:background=" #208cc9"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRemove"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRemove"
+        app:layout_constraintTop_toTopOf="@+id/buttonRemove"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="48dp"
+        android:background=" #208cc9"
+        android:text="Remove"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCancel"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancel"
+        app:layout_constraintTop_toTopOf="@+id/buttonCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="381dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Put Name To Add"
+        android:inputType="textPersonName"
+        android:paddingStart="80dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vector" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="96dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="12dp"
+        android:background=" #208cc9"
+        android:text="Cancel"
+        app:layout_constraintBottom_toTopOf="@+id/listViewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ListView
+        android:id="@+id/listViewName"
+        android:layout_width="383dp"
+        android:layout_height="491dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
